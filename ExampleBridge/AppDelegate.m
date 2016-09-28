@@ -16,7 +16,20 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    _jsvmThread = [[NSThread alloc] initWithTarget:self
+                                          selector:@selector(runJSVMThread)
+                                            object:nil];
+    [_jsvmThread start];
+}
+
+- (void)runJSVMThread {
+    [[[ChakraProxy alloc] init] run];
+    
+    NSRunLoop *runloop = [NSRunLoop currentRunLoop];
+    
+    while (true) {
+        [runloop runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+    }
 }
 
 
