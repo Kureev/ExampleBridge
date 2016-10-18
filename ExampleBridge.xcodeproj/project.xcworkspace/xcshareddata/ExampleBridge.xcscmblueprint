@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EC289E135D3E8762FCC0F816F606056C745CF5EC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "67F632D3CD46CA427A558600235E35D8E67DE6FA" : 9223372036854775807,
+    "EC289E135D3E8762FCC0F816F606056C745CF5EC" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A3E12499-7E09-4C15-A18C-8A54E877C0F4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "67F632D3CD46CA427A558600235E35D8E67DE6FA" : "ExampleBridge\/modules\/ChakraCore\/",
+    "EC289E135D3E8762FCC0F816F606056C745CF5EC" : "ExampleBridge\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ExampleBridge",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ExampleBridge.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Microsoft\/ChakraCore",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67F632D3CD46CA427A558600235E35D8E67DE6FA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Kureev\/ExampleBridge",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EC289E135D3E8762FCC0F816F606056C745CF5EC"
+    }
+  ]
+}

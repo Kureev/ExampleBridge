@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A676F6AD1DB666F600992CEF /* libChakra.Jsrt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6AC1DB666F600992CEF /* libChakra.Jsrt.a */; };
+		A676F6AF1DB6672E00992CEF /* libChakra.Common.Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6AE1DB6672E00992CEF /* libChakra.Common.Core.a */; };
+		A676F6B11DB6675500992CEF /* libChakra.Pal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6B01DB6675500992CEF /* libChakra.Pal.a */; };
+		A676F6B51DB667BD00992CEF /* libicudata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6B21DB667BD00992CEF /* libicudata.a */; };
+		A676F6B61DB667BD00992CEF /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6B31DB667BD00992CEF /* libicui18n.a */; };
+		A676F6B71DB667BD00992CEF /* libicutu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6B41DB667BD00992CEF /* libicutu.a */; };
 		A6F463B41D99D0BF007E3240 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F463B31D99D0BF007E3240 /* AppDelegate.m */; };
 		A6F463B71D99D0BF007E3240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F463B61D99D0BF007E3240 /* main.m */; };
 		A6F463C61D9C0757007E3240 /* ChakraProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6F463C51D9C0757007E3240 /* ChakraProxy.mm */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A676F6AC1DB666F600992CEF /* libChakra.Jsrt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChakra.Jsrt.a; path = modules/ChakraCore/BuildLinux/Test/lib/Jsrt/libChakra.Jsrt.a; sourceTree = "<group>"; };
+		A676F6AE1DB6672E00992CEF /* libChakra.Common.Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChakra.Common.Core.a; path = modules/ChakraCore/BuildLinux/Test/lib/Common/Core/libChakra.Common.Core.a; sourceTree = "<group>"; };
+		A676F6B01DB6675500992CEF /* libChakra.Pal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChakra.Pal.a; path = modules/ChakraCore/BuildLinux/Test/pal/src/libChakra.Pal.a; sourceTree = "<group>"; };
+		A676F6B21DB667BD00992CEF /* libicudata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicudata.a; path = ../../../../usr/local/Cellar/icu4c/57.1/lib/libicudata.a; sourceTree = "<group>"; };
+		A676F6B31DB667BD00992CEF /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicui18n.a; path = ../../../../usr/local/Cellar/icu4c/57.1/lib/libicui18n.a; sourceTree = "<group>"; };
+		A676F6B41DB667BD00992CEF /* libicutu.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicutu.a; path = ../../../../usr/local/Cellar/icu4c/57.1/lib/libicutu.a; sourceTree = "<group>"; };
 		A6F463AF1D99D0BE007E3240 /* ExampleBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F463B21D99D0BE007E3240 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6F463B31D99D0BF007E3240 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A676F6B11DB6675500992CEF /* libChakra.Pal.a in Frameworks */,
+				A676F6AF1DB6672E00992CEF /* libChakra.Common.Core.a in Frameworks */,
+				A676F6AD1DB666F600992CEF /* libChakra.Jsrt.a in Frameworks */,
+				A676F6B51DB667BD00992CEF /* libicudata.a in Frameworks */,
+				A676F6B61DB667BD00992CEF /* libicui18n.a in Frameworks */,
+				A676F6B71DB667BD00992CEF /* libicutu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A676F6AB1DB666F500992CEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A676F6B21DB667BD00992CEF /* libicudata.a */,
+				A676F6B31DB667BD00992CEF /* libicui18n.a */,
+				A676F6B41DB667BD00992CEF /* libicutu.a */,
+				A676F6B01DB6675500992CEF /* libChakra.Pal.a */,
+				A676F6AE1DB6672E00992CEF /* libChakra.Common.Core.a */,
+				A676F6AC1DB666F600992CEF /* libChakra.Jsrt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6F463A61D99D0BE007E3240 = {
 			isa = PBXGroup;
 			children = (
 				A6F463B11D99D0BE007E3240 /* ExampleBridge */,
 				A6F463B01D99D0BE007E3240 /* Products */,
+				A676F6AB1DB666F500992CEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,8 +282,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/modules/ChakraCore/lib/Jsrt/**";
 				INFOPLIST_FILE = ExampleBridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/icu4c/57.1/lib,
+					/usr/local/opt/icu4c/lib,
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/lib/Common/Core",
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/lib/Jsrt",
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/pal/src",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oss.ExampleBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -261,8 +301,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/modules/ChakraCore/lib/Jsrt/**";
 				INFOPLIST_FILE = ExampleBridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/icu4c/57.1/lib,
+					/usr/local/opt/icu4c/lib,
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/lib/Common/Core",
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/lib/Jsrt",
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/pal/src",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oss.ExampleBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -287,6 +335,7 @@
 				A6F463C21D99D0BF007E3240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
