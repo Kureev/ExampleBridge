@@ -12,11 +12,12 @@
 
 -(void)openWithSize:(NSSize)dimensions {
     NSInteger mask = 0b1111;
-    
+
     _window = [[NSWindow alloc]
                initWithContentRect:NSMakeRect(100, 100, dimensions.width, dimensions.height)
                styleMask:mask
-               backing:NSBackingStoreBuffered defer:NO];
+               backing:NSBackingStoreBuffered
+               defer:NO];
     
     [_window makeKeyAndOrderFront:NSApp];
     [NSApp activateIgnoringOtherApps:YES];

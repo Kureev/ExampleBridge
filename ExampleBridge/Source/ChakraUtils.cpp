@@ -37,11 +37,9 @@ namespace ChakraUtils {
         return msg_str;
     }
     
-    int toInt(JsValueRef ref) {
-        JsValueRef vref;
-        JsConvertValueToString(ref, &vref);
-        int value;
-        JsNumberToInt(vref, &value);
+    double toDouble(JsValueRef ref) {
+        double value;
+        JsNumberToDouble(ref, &value);
         return value;
     }
     

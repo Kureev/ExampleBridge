@@ -17,7 +17,7 @@ namespace ChakraUtils {
     void setObjectProperty(const JsValueRef &object, const char *name, const JsValueRef &value);
     void setObjectFunctionProperty(const JsValueRef &object, const char *name, JsNativeFunction fn);
     const char *toString(JsValueRef ref);
-    int toInt(JsValueRef ref);
+    double toDouble(JsValueRef ref);
     
     JsValueRef toObject(JsValueRef ref);
 };

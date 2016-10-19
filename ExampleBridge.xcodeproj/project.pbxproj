@@ -15,6 +15,8 @@
 		A676F6BA1DB66E5700992CEF /* EBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A676F6B91DB66E5700992CEF /* EBWindow.m */; };
 		A676F6BD1DB66FBB00992CEF /* ChakraUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A676F6BB1DB66FBB00992CEF /* ChakraUtils.cpp */; };
 		A676F6BF1DB7D05900992CEF /* libicuuc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6BE1DB7D05900992CEF /* libicuuc.a */; };
+		A676F6C21DB8077500992CEF /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = A676F6C11DB8077500992CEF /* main.js */; };
+		A676F6C51DB8127E00992CEF /* EBUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A676F6C41DB8127E00992CEF /* EBUIManager.m */; };
 		A6F463B41D99D0BF007E3240 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F463B31D99D0BF007E3240 /* AppDelegate.m */; };
 		A6F463B71D99D0BF007E3240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F463B61D99D0BF007E3240 /* main.m */; };
 		A6F463C61D9C0757007E3240 /* ChakraProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6F463C51D9C0757007E3240 /* ChakraProxy.mm */; };
@@ -33,6 +35,9 @@
 		A676F6BB1DB66FBB00992CEF /* ChakraUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChakraUtils.cpp; path = Source/ChakraUtils.cpp; sourceTree = "<group>"; };
 		A676F6BC1DB66FBB00992CEF /* ChakraUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ChakraUtils.hpp; path = Source/ChakraUtils.hpp; sourceTree = "<group>"; };
 		A676F6BE1DB7D05900992CEF /* libicuuc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicuuc.a; path = ../../../../usr/local/Cellar/icu4c/57.1/lib/libicuuc.a; sourceTree = "<group>"; };
+		A676F6C11DB8077500992CEF /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = ExampleBridge/main.js; sourceTree = "<group>"; };
+		A676F6C31DB8127E00992CEF /* EBUIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBUIManager.h; sourceTree = "<group>"; };
+		A676F6C41DB8127E00992CEF /* EBUIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBUIManager.m; sourceTree = "<group>"; };
 		A6F463AF1D99D0BE007E3240 /* ExampleBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F463B21D99D0BE007E3240 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6F463B31D99D0BF007E3240 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,9 +79,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A676F6C01DB8075100992CEF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A676F6C11DB8077500992CEF /* main.js */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		A6F463A61D99D0BE007E3240 = {
 			isa = PBXGroup;
 			children = (
+				A676F6C01DB8075100992CEF /* Assets */,
 				A6F463B11D99D0BE007E3240 /* ExampleBridge */,
 				A6F463B01D99D0BE007E3240 /* Products */,
 				A676F6AB1DB666F500992CEF /* Frameworks */,
@@ -121,6 +135,8 @@
 				A676F6B91DB66E5700992CEF /* EBWindow.m */,
 				A676F6BB1DB66FBB00992CEF /* ChakraUtils.cpp */,
 				A676F6BC1DB66FBB00992CEF /* ChakraUtils.hpp */,
+				A676F6C31DB8127E00992CEF /* EBUIManager.h */,
+				A676F6C41DB8127E00992CEF /* EBUIManager.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -184,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F463C81D9C085E007E3240 /* MainMenu.xib in Resources */,
+				A676F6C21DB8077500992CEF /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +213,7 @@
 			files = (
 				A676F6BA1DB66E5700992CEF /* EBWindow.m in Sources */,
 				A6F463C61D9C0757007E3240 /* ChakraProxy.mm in Sources */,
+				A676F6C51DB8127E00992CEF /* EBUIManager.m in Sources */,
 				A6F463B71D99D0BF007E3240 /* main.m in Sources */,
 				A6F463B41D99D0BF007E3240 /* AppDelegate.m in Sources */,
 				A676F6BD1DB66FBB00992CEF /* ChakraUtils.cpp in Sources */,
