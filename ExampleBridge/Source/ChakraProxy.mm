@@ -70,7 +70,7 @@ JsErrorCode SetupGlobalEnvironment() {
     SetupGlobalEnvironment();
     
     // Run the script.
-    JsErrorCode code = JsRunScriptUtf8(script, currentSourceContext++, "", nullptr);
+    JsRunScriptUtf8(script, currentSourceContext++, "", nullptr);
 }
 
 @end
