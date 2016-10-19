@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A676F6AD1DB666F600992CEF /* libChakra.Jsrt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6AC1DB666F600992CEF /* libChakra.Jsrt.a */; };
+		A676F6AF1DB6672E00992CEF /* libChakra.Common.Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6AE1DB6672E00992CEF /* libChakra.Common.Core.a */; };
+		A676F6B11DB6675500992CEF /* libChakra.Pal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6B01DB6675500992CEF /* libChakra.Pal.a */; };
+		A676F6B51DB667BD00992CEF /* libicudata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6B21DB667BD00992CEF /* libicudata.a */; };
+		A676F6B61DB667BD00992CEF /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6B31DB667BD00992CEF /* libicui18n.a */; };
+		A676F6BA1DB66E5700992CEF /* EBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A676F6B91DB66E5700992CEF /* EBWindow.m */; };
+		A676F6BD1DB66FBB00992CEF /* ChakraUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A676F6BB1DB66FBB00992CEF /* ChakraUtils.cpp */; };
+		A676F6BF1DB7D05900992CEF /* libicuuc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A676F6BE1DB7D05900992CEF /* libicuuc.a */; };
+		A676F6C21DB8077500992CEF /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = A676F6C11DB8077500992CEF /* main.js */; };
+		A676F6C51DB8127E00992CEF /* EBUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A676F6C41DB8127E00992CEF /* EBUIManager.m */; };
 		A6F463B41D99D0BF007E3240 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F463B31D99D0BF007E3240 /* AppDelegate.m */; };
 		A6F463B71D99D0BF007E3240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F463B61D99D0BF007E3240 /* main.m */; };
 		A6F463C61D9C0757007E3240 /* ChakraProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6F463C51D9C0757007E3240 /* ChakraProxy.mm */; };
@@ -14,6 +24,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A676F6AC1DB666F600992CEF /* libChakra.Jsrt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChakra.Jsrt.a; path = modules/ChakraCore/BuildLinux/Test/lib/Jsrt/libChakra.Jsrt.a; sourceTree = "<group>"; };
+		A676F6AE1DB6672E00992CEF /* libChakra.Common.Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChakra.Common.Core.a; path = modules/ChakraCore/BuildLinux/Test/lib/Common/Core/libChakra.Common.Core.a; sourceTree = "<group>"; };
+		A676F6B01DB6675500992CEF /* libChakra.Pal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChakra.Pal.a; path = modules/ChakraCore/BuildLinux/Test/pal/src/libChakra.Pal.a; sourceTree = "<group>"; };
+		A676F6B21DB667BD00992CEF /* libicudata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicudata.a; path = ../../../../usr/local/Cellar/icu4c/57.1/lib/libicudata.a; sourceTree = "<group>"; };
+		A676F6B31DB667BD00992CEF /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicui18n.a; path = ../../../../usr/local/Cellar/icu4c/57.1/lib/libicui18n.a; sourceTree = "<group>"; };
+		A676F6B41DB667BD00992CEF /* libicutu.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicutu.a; path = ../../../../usr/local/Cellar/icu4c/57.1/lib/libicutu.a; sourceTree = "<group>"; };
+		A676F6B81DB66E5700992CEF /* EBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBWindow.h; path = Source/EBWindow.h; sourceTree = "<group>"; };
+		A676F6B91DB66E5700992CEF /* EBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBWindow.m; path = Source/EBWindow.m; sourceTree = "<group>"; };
+		A676F6BB1DB66FBB00992CEF /* ChakraUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChakraUtils.cpp; path = Source/ChakraUtils.cpp; sourceTree = "<group>"; };
+		A676F6BC1DB66FBB00992CEF /* ChakraUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ChakraUtils.hpp; path = Source/ChakraUtils.hpp; sourceTree = "<group>"; };
+		A676F6BE1DB7D05900992CEF /* libicuuc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicuuc.a; path = ../../../../usr/local/Cellar/icu4c/57.1/lib/libicuuc.a; sourceTree = "<group>"; };
+		A676F6C11DB8077500992CEF /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = ExampleBridge/main.js; sourceTree = "<group>"; };
+		A676F6C31DB8127E00992CEF /* EBUIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBUIManager.h; sourceTree = "<group>"; };
+		A676F6C41DB8127E00992CEF /* EBUIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBUIManager.m; sourceTree = "<group>"; };
 		A6F463AF1D99D0BE007E3240 /* ExampleBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F463B21D99D0BE007E3240 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6F463B31D99D0BF007E3240 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,17 +53,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A676F6B11DB6675500992CEF /* libChakra.Pal.a in Frameworks */,
+				A676F6AF1DB6672E00992CEF /* libChakra.Common.Core.a in Frameworks */,
+				A676F6AD1DB666F600992CEF /* libChakra.Jsrt.a in Frameworks */,
+				A676F6B51DB667BD00992CEF /* libicudata.a in Frameworks */,
+				A676F6B61DB667BD00992CEF /* libicui18n.a in Frameworks */,
+				A676F6BF1DB7D05900992CEF /* libicuuc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A676F6AB1DB666F500992CEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A676F6BE1DB7D05900992CEF /* libicuuc.a */,
+				A676F6B21DB667BD00992CEF /* libicudata.a */,
+				A676F6B31DB667BD00992CEF /* libicui18n.a */,
+				A676F6B41DB667BD00992CEF /* libicutu.a */,
+				A676F6B01DB6675500992CEF /* libChakra.Pal.a */,
+				A676F6AE1DB6672E00992CEF /* libChakra.Common.Core.a */,
+				A676F6AC1DB666F600992CEF /* libChakra.Jsrt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A676F6C01DB8075100992CEF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A676F6C11DB8077500992CEF /* main.js */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		A6F463A61D99D0BE007E3240 = {
 			isa = PBXGroup;
 			children = (
+				A676F6C01DB8075100992CEF /* Assets */,
 				A6F463B11D99D0BE007E3240 /* ExampleBridge */,
 				A6F463B01D99D0BE007E3240 /* Products */,
+				A676F6AB1DB666F500992CEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +131,12 @@
 			children = (
 				A6F463C41D9C0757007E3240 /* ChakraProxy.h */,
 				A6F463C51D9C0757007E3240 /* ChakraProxy.mm */,
+				A676F6B81DB66E5700992CEF /* EBWindow.h */,
+				A676F6B91DB66E5700992CEF /* EBWindow.m */,
+				A676F6BB1DB66FBB00992CEF /* ChakraUtils.cpp */,
+				A676F6BC1DB66FBB00992CEF /* ChakraUtils.hpp */,
+				A676F6C31DB8127E00992CEF /* EBUIManager.h */,
+				A676F6C41DB8127E00992CEF /* EBUIManager.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -140,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F463C81D9C085E007E3240 /* MainMenu.xib in Resources */,
+				A676F6C21DB8077500992CEF /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A676F6BA1DB66E5700992CEF /* EBWindow.m in Sources */,
 				A6F463C61D9C0757007E3240 /* ChakraProxy.mm in Sources */,
+				A676F6C51DB8127E00992CEF /* EBUIManager.m in Sources */,
 				A6F463B71D99D0BF007E3240 /* main.m in Sources */,
 				A6F463B41D99D0BF007E3240 /* AppDelegate.m in Sources */,
+				A676F6BD1DB66FBB00992CEF /* ChakraUtils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +314,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/modules/ChakraCore/lib/Jsrt/**";
 				INFOPLIST_FILE = ExampleBridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/icu4c/57.1/lib,
+					/usr/local/opt/icu4c/lib,
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/lib/Common/Core",
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/lib/Jsrt",
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/pal/src",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oss.ExampleBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -261,8 +333,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/modules/ChakraCore/lib/Jsrt/**";
 				INFOPLIST_FILE = ExampleBridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/icu4c/57.1/lib,
+					/usr/local/opt/icu4c/lib,
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/lib/Common/Core",
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/lib/Jsrt",
+					"$(PROJECT_DIR)/modules/ChakraCore/BuildLinux/Test/pal/src",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oss.ExampleBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -287,6 +367,7 @@
 				A6F463C21D99D0BF007E3240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

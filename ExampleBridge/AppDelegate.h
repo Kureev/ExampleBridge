@@ -8,10 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ChakraProxy.h"
+#import "EBWindow.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (nonatomic, retain) NSThread *jsvmThread;
+
+- (void)renderElementOfType:(NSString *)name size:(NSSize)size;
 
 @end
 

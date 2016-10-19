@@ -7,10 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "EBUImanager.h"
 
 @interface AppDelegate ()
-
-@property (weak) IBOutlet NSWindow *window;
 @end
 
 @implementation AppDelegate
@@ -32,6 +31,13 @@
     }
 }
 
+- (void)renderElementOfType:(NSString *)name size:(NSSize)size {
+    EBWindow *window = [[EBWindow alloc] init];
+    EBUIManager *manager = [EBUIManager sharedInstance];
+    [window openWithSize:NSMakeSize((CGFloat)size.width, (CGFloat)size.height)];
+    NSString *uuid = [[NSUUID UUID] UUIDString];
+    [manager addValue:window forKey:uuid];
+}
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
