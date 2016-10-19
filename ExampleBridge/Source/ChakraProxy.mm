@@ -7,6 +7,11 @@
 //
 
 #import "ChakraProxy.h"
+#import "ChakraCore.h"
+#import "iostream"
+#import "EBWindow.h"
+#import "AppDelegate.h"
+#import "ChakraUtils.hpp"
 
 @implementation ChakraProxy
 
